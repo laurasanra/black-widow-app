@@ -1,0 +1,32 @@
+.back_button {
+    background-color: white;
+    width: 9rem;
+    height: 3.5rem;
+    position: fixed;
+    right: 0;
+    top: 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem 0 0 3rem;
+    animation-name: filterIntro;
+    animation-duration: 1s;
+    font-size: 20px;
+    color: black;
+
+    &:hover {
+        background-color: lightblue;
+        font-weight: bolder;
+    }
+}
+
+@keyframes filterIntro {
+    from {
+        right: -64%;
+    }
+
+    to {
+        right: 0;
+    }
+}

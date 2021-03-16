@@ -21,7 +21,10 @@ const DetailPage = () => {
   return (
     <div>
       <BackButton />
-      <ComicDetailCard comic={info} />
+      <div className="details_container">
+        <img className="comic_picture" src={info.image} alt="comic" />
+        <ComicDetailCard comic={info} />
+      </div>
     </div>
   );
 };

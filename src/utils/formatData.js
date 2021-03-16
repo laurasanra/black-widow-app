@@ -32,8 +32,20 @@ export const formatComicDetails = (comicDetails) => {
   const formattedComicReport = {
     id: comicDetails.id,
     title: comicDetails.title,
-    events: comicDetails.events.items,
     image: comicDetails.images[0].path + "." + comicDetails.images[0].extension,
+    description: comicDetails.description,
+    pages: comicDetails.pageCount,
+    series: comicDetails.series.name,
+    onSaleDate: comicDetails.dates[0].date,
+    creators: comicDetails.creators.items.map((item) => {
+      return item.name;
+    }),
+    characters: comicDetails.characters.items.map((item) => {
+      return item.name;
+    }),
+    events: comicDetails.events.items.map((item) => {
+      return item.name;
+    }),
   };
   return formattedComicReport;
 };

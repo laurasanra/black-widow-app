@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export const formatCharacterInfo = (characterDetails) => {
   let characterEvents = [];
   characterDetails.events.items.map((e) => {
@@ -36,7 +38,8 @@ export const formatComicDetails = (comicDetails) => {
     description: comicDetails.description,
     pages: comicDetails.pageCount,
     series: comicDetails.series.name,
-    onSaleDate: comicDetails.dates[0].date,
+    onSaleDate: moment(comicDetails.dates[0].date).format("DD/MM/YYYY"),
+
     creators: comicDetails.creators.items.map((item) => {
       return item.name;
     }),

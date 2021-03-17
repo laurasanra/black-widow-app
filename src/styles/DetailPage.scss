@@ -36,14 +36,54 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 2rem 4rem;
+    padding: 3rem 4rem;
 
     @media all and (max-width:768px) {
-        padding: 0 2rem;
-        flex-direction: column;
+        padding: 3rem;
+        flex-direction: column-reverse;
+    }
+
+    @media all and (max-width:500px) {
+        padding: 2rem 1rem;
     }
 }
 
 .comic_picture {
     width: 40%;
+
+    @media all and (max-width:768px) {
+        width: 100%;
+    }
+}
+
+.comic_detail_card {
+    padding-left: 2rem;
+    width: 60%;
+
+    @media all and (max-width:768px) {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+.card_title {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+.card_body {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+
+    @media all and (max-width:500px) {
+        padding: 1.5rem;
+    }
+}
+
+.text_bolder {
+    font-weight: bolder;
 }

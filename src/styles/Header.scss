@@ -30,7 +30,8 @@
     @media all and (max-width:500px) {
         height: 67%;
         border-radius: 0;
-        animation-name: none;
+        animation-name: pictureIntroMobile;
+        animation-duration: 2s;
     }
 
 }
@@ -42,6 +43,16 @@
 
     to {
         height: 100%;
+    }
+}
+
+@keyframes pictureIntroMobile {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 67%;
     }
 }
 

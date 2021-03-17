@@ -77,8 +77,6 @@
 
 }
 
-
-
 @keyframes shadow {
     33% {
         text-shadow: 0 0 8px #979dac,
@@ -86,11 +84,11 @@
     }
 
     50% {
-        text-shadow: 0 0 8px #979dac,
+        text-shadow: 0 0 16px #979dac,
             10px 10px 10px #AEAEC040
     }
 
-    66.67% {
+    67% {
         text-shadow: 0 0 8px #979dac,
             10px 10px 10px #AEAEC040
     }

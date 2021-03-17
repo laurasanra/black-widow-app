@@ -3,7 +3,7 @@ import { formatComicInfo } from "../utils/formatData";
 async function comicUrls(numberOfComics) {
   let urls = [];
   for (let i = 0; i < numberOfComics; i += 90) {
-    const url = `http://gateway.marvel.com/v1/public/characters/1009189/comics?apikey=80118dfe89fca0550baf8f8ab8785904&hash=afe8eff7ea8c246fcdb1cdaeb784f811&ts=1&limit=90&offset=${i}`;
+    const url = `https://gateway.marvel.com/v1/public/characters/1009189/comics?apikey=80118dfe89fca0550baf8f8ab8785904&hash=afe8eff7ea8c246fcdb1cdaeb784f811&ts=1&limit=90&offset=${i}`;
     urls.push(url);
   }
   return urls;

@@ -5,7 +5,7 @@ class BackButton extends React.Component {
   render() {
     return (
       <Link to="/">
-        <div className="back_button">
+        <div className="back-button">
           <p>GO BACK</p>
         </div>
       </Link>

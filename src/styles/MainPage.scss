@@ -1,4 +1,4 @@
-.filter_box {
+.filter-box {
     background-color: white;
     width: 54%;
     height: 4rem;
@@ -53,8 +53,8 @@
     }
 }
 
-.options_container,
-.filters_container {
+.options-container,
+.filters-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -66,7 +66,7 @@
     }
 }
 
-.filters_container {
+.filters-container {
     justify-content: center;
 
     @media all and (max-width:768px) {
@@ -74,8 +74,8 @@
     }
 }
 
-.filters_container input,
-.filters_container select {
+.filters-container input,
+.filters-container select {
     @media all and (max-width:768px) {
         max-width: 40%;
     }
@@ -87,8 +87,8 @@
     }
 }
 
-.clear_button,
-.sort_button {
+.clear-button,
+.sort-button {
     cursor: pointer;
     max-width: 50%;
     text-align: center;
@@ -118,7 +118,7 @@
     }
 }
 
-.results_text {
+.results-text {
     text-align: center;
     width: 100%;
     color: darkred;
@@ -133,7 +133,7 @@
     }
 }
 
-.noresults_text {
+.noresults-text {
     color: white;
     text-align: center;
     margin-top: 4rem;
@@ -145,7 +145,7 @@
     }
 }
 
-.list_container {
+.list-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -161,10 +161,10 @@
     }
 }
 
-.comic_card {
+.comic-card {
     box-sizing: border-box;
-    width: 15rem;
-    height: 5.5rem;
+    width: 16rem;
+    height: 6rem;
     margin: 1rem;
     padding: 0.8rem;
     text-align: center;

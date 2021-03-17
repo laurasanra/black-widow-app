@@ -1,4 +1,4 @@
-.main_header {
+.main-header {
     width: 100%;
     height: 12rem;
     display: flex;
@@ -21,7 +21,7 @@
     }
 }
 
-.main_picture {
+.main-picture {
     height: 100%;
     border-radius: 0 0 3rem 3rem;
     animation-name: pictureIntro;
@@ -56,7 +56,7 @@
     }
 }
 
-.main_title {
+.main-title {
     margin-top: 2rem;
     text-transform: uppercase;
     color: white;

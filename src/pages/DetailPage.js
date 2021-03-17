@@ -21,8 +21,8 @@ const DetailPage = () => {
   return (
     <div>
       <BackButton />
-      <div className="details_container">
-        <img className="comic_picture" src={info.image} alt="comic" />
+      <div className="details-container">
+        <img className="comic-picture" src={info.image} alt="comic" />
         <ComicDetailCard comic={info} />
       </div>
     </div>

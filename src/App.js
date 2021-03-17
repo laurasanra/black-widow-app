@@ -24,15 +24,14 @@ function App() {
   else
     return (
       <div className="App">
-        <header className="main_header">
+        <header className="main-header">
           <img
-            className="main_picture"
+            className="main-picture"
             src={character.image}
             alt="black_widow"
           />
-          <h1 className="main_title">Black Widow</h1>
+          <h1 className="main-title">Black Widow</h1>
         </header>
-
         <main>
           <Router>
             <Route path="/" exact>

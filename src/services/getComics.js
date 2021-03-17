@@ -20,8 +20,10 @@ export const getComics = async (numberOfComics) => {
           for (let d of data) {
             d.data.results.forEach((comic) => {
               const formattedComic = formatComicInfo(comic);
-              if (!comics.includes(formattedComic))
-                return comics.push(formattedComic);
+              const duplicatedComic = comics.find((comic) => {
+                return comic.id === formattedComic.id;
+              });
+              if (!duplicatedComic) return comics.push(formattedComic);
             });
           }
         });

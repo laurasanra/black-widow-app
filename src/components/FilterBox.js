@@ -11,8 +11,8 @@ class FilterBox extends React.Component {
       updateSort,
     } = this.props;
     return (
-      <div className="filter_box">
-        <div className="filters_container">
+      <div className="filter-box">
+        <div className="filters-container">
           <input
             type="text"
             placeholder="Search..."
@@ -40,9 +40,9 @@ class FilterBox extends React.Component {
             })}
           </select>
         </div>
-        <div className="options_container">
+        <div className="options-container">
           <div
-            className="clear_button"
+            className="clear-button"
             onClick={(e) => {
               updateFilter({ query: "", select: "" });
             }}
@@ -50,14 +50,14 @@ class FilterBox extends React.Component {
             CLEAR
           </div>
           <div
-            className="sort_button"
+            className="sort-button"
             onClick={(e) => {
               updateSort(sortItem === "A-Z" ? "Z-A" : "A-Z");
             }}
           >
             SORT BY {sortItem === "A-Z" ? "Z-A" : "A-Z"}
           </div>
-          <p className="results_text">{number} results</p>
+          <p className="results-text">{number} results</p>
         </div>
       </div>
     );

@@ -1,4 +1,4 @@
-.back_button {
+.back-button {
     background-color: white;
     width: 9rem;
     height: 3.5rem;
@@ -31,7 +31,7 @@
     }
 }
 
-.details_container {
+.details-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,7 +48,7 @@
     }
 }
 
-.comic_picture {
+.comic-picture {
     width: 40%;
 
     @media all and (max-width:768px) {
@@ -56,7 +56,7 @@
     }
 }
 
-.comic_detail_card {
+.comic-detail-card {
     padding-left: 2rem;
     width: 60%;
 
@@ -67,14 +67,14 @@
     }
 }
 
-.card_title {
+.card-title {
     color: white;
     width: 100%;
     text-align: center;
     margin-top: 0;
 }
 
-.card_body {
+.card-body {
     background-color: white;
     padding: 2rem;
     border-radius: 15px;
@@ -84,6 +84,6 @@
     }
 }
 
-.text_bolder {
+.text-bolder {
     font-weight: bolder;
 }

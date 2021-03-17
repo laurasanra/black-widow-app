@@ -8,7 +8,7 @@ class ComicsContainer extends React.Component {
     if (elements.length < 1) return <NoResults />;
     else
       return (
-        <div className="list_container">
+        <div className="list-container">
           {elements.map((comic) => {
             return <ComicCard comic={comic} key={comic.id} />;
           })}

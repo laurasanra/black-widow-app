@@ -1,89 +1,100 @@
 .back-button {
-    background-color: $light-color;
-    width: 9rem;
-    height: 3.5rem;
-    position: fixed;
-    right: 0;
-    top: 8rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3rem 0 0 3rem;
-    animation-name: filterIntro;
-    animation-duration: 1s;
-    font-size: 20px;
-    color: $dark-color;
+  background-color: $light-color;
+  width: 9rem;
+  height: 3.5rem;
+  position: fixed;
+  right: 0;
+  top: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem 0 0 3rem;
+  animation-name: filterIntro;
+  animation-duration: 1s;
+  font-size: 20px;
+  color: $dark-color;
 
-    &:hover {
-        background-color: $special-color;
-        font-weight: bolder;
-    }
+  &:hover {
+    background-color: $special-color;
+    font-weight: bolder;
+  }
 }
 
 @keyframes filterIntro {
-    from {
-        right: -64%;
-    }
+  from {
+    right: -64%;
+  }
 
-    to {
-        right: 0;
-    }
+  to {
+    right: 0;
+  }
 }
 
 .details-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 3rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem 4rem;
 
-    @media all and (max-width:768px) {
-        padding: 3rem;
-        flex-direction: column-reverse;
-    }
+  @media all and (max-width: 768px) {
+    padding: 3rem;
+    flex-direction: column-reverse;
+  }
 
-    @media all and (max-width:500px) {
-        padding: 2rem 1rem;
-    }
+  @media all and (max-width: 500px) {
+    padding: 2rem 1rem;
+  }
 }
 
 .comic-picture {
-    width: 40%;
+  width: 40%;
 
-    @media all and (max-width:768px) {
-        width: 100%;
-    }
+  @media all and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .comic-detail-card {
-    padding-left: 2rem;
-    width: 60%;
+  padding-left: 2rem;
+  width: 60%;
 
-    @media all and (max-width:768px) {
-        width: 100%;
-        padding-left: 0;
-        margin-bottom: 2rem;
+  div {
+    margin-bottom: 0.5rem;
+    span {
+      line-height: 1.7rem;
     }
+  }
+
+  @media all and (max-width: 768px) {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
 }
 
 .card-title {
-    color: $light-color;
-    width: 100%;
-    text-align: center;
-    margin-top: 0;
+  color: $light-color;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  font-size: 2rem;
+  @media all and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 .card-body {
-    background-color: $light-color;
-    padding: 2rem;
-    border-radius: 15px;
+  background-color: $light-color;
+  padding: 2rem;
+  border-radius: 15px;
 
-    @media all and (max-width:500px) {
-        padding: 1.5rem;
-    }
+  @media all and (max-width: 500px) {
+    padding: 1.5rem;
+  }
 }
 
 .text-bolder {
-    font-weight: bolder;
+  font-weight: bolder;
 }

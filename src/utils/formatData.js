@@ -30,6 +30,18 @@ export const formatComicInfo = (comic) => {
   return formattedComic;
 };
 
+const convertToString = (items) => {
+  if (items.length > 0) {
+    let itemsString = items[0].name;
+    for (let i = 1; i < items.length; i++) {
+      itemsString += `, ${items[i].name}`;
+    }
+    return itemsString;
+  } else {
+    return undefined;
+  }
+};
+
 export const formatComicDetails = (comicDetails) => {
   const formattedComicReport = {
     id: comicDetails.id,
@@ -39,16 +51,9 @@ export const formatComicDetails = (comicDetails) => {
     pages: comicDetails.pageCount,
     series: comicDetails.series.name,
     onSaleDate: moment(comicDetails.dates[0].date).format("DD/MM/YYYY"),
-
-    creators: comicDetails.creators.items.map((item) => {
-      return item.name;
-    }),
-    characters: comicDetails.characters.items.map((item) => {
-      return item.name;
-    }),
-    events: comicDetails.events.items.map((item) => {
-      return item.name;
-    }),
+    creators: convertToString(comicDetails.creators.items),
+    characters: convertToString(comicDetails.characters.items),
+    events: convertToString(comicDetails.events.items),
   };
   return formattedComicReport;
 };

@@ -1,201 +1,201 @@
 .filter-box {
-    background-color: $light-color;
-    width: 54%;
-    height: 4rem;
-    position: fixed;
-    right: 0;
-    top: 8rem;
-    border-radius: 3rem 0 0 3rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    animation-name: filterIntro;
-    animation-duration: 1s;
+  background-color: $light-color;
+  width: 54%;
+  height: 4rem;
+  position: fixed;
+  right: 0;
+  top: 7rem;
+  border-radius: 3rem 0 0 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  animation-name: filterIntro;
+  animation-duration: 1s;
+
+  input,
+  select,
+  p {
+    margin: 3px;
+  }
+
+  @media all and (max-width: 1024px) {
+    width: 65%;
+  }
+
+  @media all and (max-width: 900px) and (orientation: landscape) {
+    top: 5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 5rem;
+  }
+
+  @media all and (max-width: 768px) and (orientation: portrait) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 5rem;
+    width: 58%;
+    top: 7rem;
 
     input,
-    select,
-    p {
-        margin: 3px;
+    select {
+      margin: 3px;
     }
+  }
 
-    @media all and (max-width:1024px) {
-        width: 65%;
-    }
-
-    @media all and (max-width: 900px) and (orientation: landscape) {
-        top: 5rem;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 5rem;
-    }
-
-    @media all and (max-width:768px) and (orientation: portrait) {
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 5rem;
-        width: 58%;
-        top: 7rem;
-
-        input,
-        select {
-            margin: 3px;
-        }
-    }
-
-    @media all and (max-width:500px) {
-        width: 100%;
-        border-radius: 0;
-        height: 6rem;
-    }
+  @media all and (max-width: 500px) {
+    width: 100%;
+    border-radius: 0;
+    height: 6rem;
+  }
 }
 
 @keyframes filterIntro {
-    from {
-        right: -64%;
-    }
+  from {
+    right: -64%;
+  }
 
-    to {
-        right: 0;
-    }
+  to {
+    right: 0;
+  }
 }
 
 .options-container,
 .filters-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
-    @media all and (max-width: 900px) and (orientation: landscape) {
-        flex-wrap: nowrap;
-        width: 100%;
-        height: 40%;
-    }
+  @media all and (max-width: 900px) and (orientation: landscape) {
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 40%;
+  }
 
-    @media all and (max-width:768px) {
-        flex-wrap: nowrap;
-        width: 100%;
-        height: 40%;
-    }
+  @media all and (max-width: 768px) {
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 40%;
+  }
 }
 
 .filters-container input,
 .filters-container select {
-    @media all and (max-width:768px) {
-        max-width: 40%;
-    }
+  @media all and (max-width: 768px) {
+    max-width: 40%;
+  }
 
-    @media all and (max-width:500px) {
-        flex-wrap: nowrap;
-        justify-content: center;
-        max-width: 50%;
-    }
+  @media all and (max-width: 500px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 50%;
+  }
 }
 
 .clear-button,
 .sort-button {
-    cursor: pointer;
-    max-width: 50%;
-    text-align: center;
-    border: solid 1px $dark-color;
-    border-radius: 15px;
-    box-sizing: border-box;
-    padding: 2px;
-    align-self: baseline;
-    padding: 0.3rem 1rem;
+  cursor: pointer;
+  max-width: 50%;
+  text-align: center;
+  border: solid 1px $dark-color;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 2px;
+  align-self: baseline;
+  padding: 0.3rem 1rem;
 
-    @media all and (max-width:1024px) {
-        padding: 0.3rem 0.5rem;
-    }
+  @media all and (max-width: 1024px) {
+    padding: 0.3rem 0.5rem;
+  }
 
-    @media all and (max-width:768px) {
-        max-width: 35%;
-        margin: 0 0.5rem;
-    }
+  @media all and (max-width: 768px) {
+    max-width: 35%;
+    margin: 0 0.5rem;
+  }
 
-    @media all and (max-width:500px) {
-        padding: 0.3rem;
-    }
+  @media all and (max-width: 500px) {
+    padding: 0.3rem;
+  }
 
-    &:hover {
-        background-color: $dark-color;
-        color: $light-color;
-    }
+  &:hover {
+    background-color: $dark-color;
+    color: $light-color;
+  }
 }
 
 .results-text {
-    text-align: center;
-    width: 100%;
-    color: darkred;
-    align-self: baseline;
+  text-align: center;
+  width: 100%;
+  color: darkred;
+  align-self: baseline;
 
-    @media all and (max-width: 900px) and (orientation: landscape) {
-        width: 25%;
-    }
+  @media all and (max-width: 900px) and (orientation: landscape) {
+    width: 25%;
+  }
 
-    @media all and (max-width:768px) {
-        width: 25%;
-    }
+  @media all and (max-width: 768px) {
+    width: 25%;
+  }
 
-    @media all and (max-width:500px) {
-        width: 30%;
-    }
+  @media all and (max-width: 500px) {
+    width: 30%;
+  }
 }
 
 .noresults-text {
-    color: $light-color;
-    text-align: center;
-    margin-top: 4rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2rem;
+  color: $light-color;
+  text-align: center;
+  margin-top: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
 
-    @media all and (max-width:768px) {
-        font-size: 1.5rem;
-    }
+  @media all and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 .list-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 2rem 4rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 4rem;
 
-    a {
-        text-decoration: none
-    }
+  a {
+    text-decoration: none;
+  }
 
-    @media all and (max-width:768px) {
-        padding: 2rem;
-    }
+  @media all and (max-width: 768px) {
+    padding: 2rem;
+  }
 }
 
 .comic-card {
-    box-sizing: border-box;
-    width: 16rem;
-    height: 6rem;
-    margin: 1rem;
-    padding: 0.8rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: groove 3px darkgrey;
+  box-sizing: border-box;
+  width: 16rem;
+  height: 6rem;
+  margin: 1rem;
+  padding: 0.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: groove 3px darkgrey;
+
+  p {
+    color: $light-color;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.1rem;
+    text-overflow: ellipsis;
+  }
+
+  &:hover {
+    box-shadow: 0 0 14px $special-color;
+    border: none;
 
     p {
-        color: $light-color;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 1.1rem;
-        text-overflow: ellipsis;
+      color: $special-color;
     }
-
-    &:hover {
-        box-shadow: 0 0 14px $special-color;
-        border: none;
-
-        p {
-            color: $special-color;
-        }
-    }
+  }
 }

@@ -1,106 +1,101 @@
 .main-header {
-    width: 100%;
-    height: 12rem;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    position: sticky;
-    top: 0;
-    background-color: $dark-color;
+  width: 100%;
+  height: 11rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0;
+  background-color: $dark-color;
+  padding-bottom: 1rem;
+
+  @media all and (max-width: 900px) and (orientation: landscape) {
     padding-bottom: 1rem;
+    height: 10rem;
+  }
 
-    @media all and (max-width: 900px) and (orientation: landscape) {
-        padding-bottom: 1rem;
-        height: 10rem;
-    }
+  @media all and (max-width: 768px) and (orientation: portrait) {
+    padding-bottom: 2rem;
+  }
 
-    @media all and (max-width:768px) and (orientation: portrait) {
-        padding-bottom: 2rem;
-    }
-
-    @media all and (max-width:500px) {
-        justify-content: space-between;
-        padding-bottom: 1rem;
-        height: 11rem;
-    }
+  @media all and (max-width: 500px) {
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    height: 11rem;
+  }
 }
 
 .main-picture {
-    height: 100%;
-    border-radius: 0 0 3rem 3rem;
-    animation-name: pictureIntro;
+  height: 100%;
+  border-radius: 0 0 3rem 3rem;
+  animation-name: pictureIntro;
+  animation-duration: 2s;
+
+  @media all and (max-width: 500px) {
+    height: 67%;
+    border-radius: 0;
+    animation-name: pictureIntroMobile;
     animation-duration: 2s;
-
-    @media all and (max-width:500px) {
-        height: 67%;
-        border-radius: 0;
-        animation-name: pictureIntroMobile;
-        animation-duration: 2s;
-    }
-
+  }
 }
 
 @keyframes pictureIntro {
-    from {
-        height: 0%;
-    }
+  from {
+    height: 0%;
+  }
 
-    to {
-        height: 100%;
-    }
+  to {
+    height: 100%;
+  }
 }
 
 @keyframes pictureIntroMobile {
-    from {
-        height: 0%;
-    }
+  from {
+    height: 0%;
+  }
 
-    to {
-        height: 67%;
-    }
+  to {
+    height: 67%;
+  }
 }
 
 .main-title {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  color: $light-color;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 4rem;
+  animation: shadow 2s ease-in-out infinite;
+
+  @media all and (max-width: 900px) and (orientation: landscape) {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  @media all and (max-width: 768px) and (orientation: portrait) {
+    font-size: 3rem;
     margin-top: 2rem;
-    text-transform: uppercase;
-    color: $light-color;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 4rem;
-    animation: shadow 2s ease-in-out infinite;
+  }
 
-    @media all and (max-width: 900px) and (orientation: landscape) {
-        text-align: center;
-        font-size: 2.5rem;
-        margin-top: 1rem;
-    }
-
-    @media all and (max-width:768px) and (orientation: portrait) {
-        font-size: 3rem;
-        margin-top: 2rem;
-    }
-
-    @media all and (max-width:500px) {
-        text-align: center;
-        font-size: 2.5rem;
-        margin-top: 1rem;
-    }
-
+  @media all and (max-width: 500px) {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
 }
 
 @keyframes shadow {
-    33% {
-        text-shadow: 0 0 8px #979dac,
-            10px 10px 10px #AEAEC040
-    }
+  33% {
+    text-shadow: 0 0 8px #979dac, 10px 10px 10px #aeaec040;
+  }
 
-    50% {
-        text-shadow: 0 0 16px #979dac,
-            10px 10px 10px #AEAEC040
-    }
+  50% {
+    text-shadow: 0 0 16px #979dac, 10px 10px 10px #aeaec040;
+  }
 
-    67% {
-        text-shadow: 0 0 8px #979dac,
-            10px 10px 10px #AEAEC040
-    }
+  67% {
+    text-shadow: 0 0 8px #979dac, 10px 10px 10px #aeaec040;
+  }
 }

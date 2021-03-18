@@ -1,3 +1,7 @@
+$dark-color: black;
+$light-color: white;
+$special-color: lightblue;
+
 @import "./DetailPage.scss";
 @import "./MainPage.scss";
 @import "./Header.scss";
@@ -10,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: $dark-color;
 }
 
 code {

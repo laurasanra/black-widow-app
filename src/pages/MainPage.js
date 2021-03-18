@@ -44,7 +44,7 @@ const MainPage = ({ numberOfComics, selectOptions }) => {
   }, [comics, filter, sortItem]);
 
   return (
-    <div>
+    <React.Fragment>
       <FilterBox
         options={selectOptions}
         number={filteredComics ? filteredComics.length : 0}
@@ -54,7 +54,7 @@ const MainPage = ({ numberOfComics, selectOptions }) => {
         updateSort={setSortItem}
       />
       {loading ? <Loading /> : <ComicsContainer elements={filteredComics} />}
-    </div>
+    </React.Fragment>
   );
 };
 export default MainPage;

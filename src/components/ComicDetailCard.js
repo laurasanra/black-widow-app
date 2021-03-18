@@ -3,7 +3,6 @@ import React from "react";
 class ComicDetailCard extends React.Component {
   render() {
     const { comic } = this.props;
-    console.log(comic);
     return (
       <div className="comic-detail-card">
         <h2 className="card-title">{comic.title}</h2>

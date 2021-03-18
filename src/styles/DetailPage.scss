@@ -1,5 +1,5 @@
 .back-button {
-    background-color: white;
+    background-color: $light-color;
     width: 9rem;
     height: 3.5rem;
     position: fixed;
@@ -13,10 +13,10 @@
     animation-name: filterIntro;
     animation-duration: 1s;
     font-size: 20px;
-    color: black;
+    color: $dark-color;
 
     &:hover {
-        background-color: lightblue;
+        background-color: $special-color;
         font-weight: bolder;
     }
 }
@@ -68,14 +68,14 @@
 }
 
 .card-title {
-    color: white;
+    color: $light-color;
     width: 100%;
     text-align: center;
     margin-top: 0;
 }
 
 .card-body {
-    background-color: white;
+    background-color: $light-color;
     padding: 2rem;
     border-radius: 15px;
 

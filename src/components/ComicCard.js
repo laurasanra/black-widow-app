@@ -6,9 +6,9 @@ class ComicCard extends React.Component {
     const { comic } = this.props;
     return (
       <Link to={`/comic/${comic.id}`} key={comic.id}>
-        <div className="comic-card">
+        <li className="comic-card">
           <p>{comic.title}</p>
-        </div>
+        </li>
       </Link>
     );
   }
